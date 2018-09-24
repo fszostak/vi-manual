@@ -12,6 +12,7 @@ VI editor command summary. Enjoy and increase it. You're welcome.
 **:e! filename** open file with ignore changes<br/>
 **:e#** *or* **:e!#** open previous file<br/>
 **:wq** *or* **:x** *or* **:x!** save and exit<br/>
+**:q!**  exit without save<br/>
 
 **!!command**  run *command* and get output<br/>
 
