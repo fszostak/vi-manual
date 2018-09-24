@@ -14,23 +14,21 @@ On shell:
 $ vi filename
 ```
 
-On editor:
-
-```
-**:e filename** open file
-**:e! filename** open file with ignore changes
-**:e#** *or* **:e!#** open previous file
-**:wq** *or* **:x** *or* **:x!** save and exit
-**:q!**  exit without save
-
-**!!command**  run *command* and get output
-```
-
+On editor:<br/>
+<br/>
+**:e filename** open file<br/>
+**:e! filename** open file with ignore changes<br/>
+**:e#** *or* **:e!#** open previous file<br/>
+**:wq** *or* **:x** *or* **:x!** save and exit<br/>
+**:q!**  exit without save<br/>
+<br/>
+**!!command**  run *command* and get output<br/>
+<br/>
 Check on bottom of screen the command mode:<br/>
-
-**nothing** is command mode<br/>
-**-- INSERT --**  is in insert mode<br/>
-**-- REPLACE --**  is in replace mode<br/>
+<br/>
+**nothing** is on *command* mode<br/>
+**-- INSERT --**  is on *insert* mode<br/>
+**-- REPLACE --**  is on *replace* mode<br/>
 <br/>
 Type <kbd>esc</kdb> to exit to command mode<br/>
 
