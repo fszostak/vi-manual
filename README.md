@@ -6,15 +6,33 @@ VI editor command summary. Enjoy and increase it. You're welcome.
 
 ----------
 
-**Edition**
+**Open, save and exit**
 
-**:e filename** open file<br/>
-**:e! filename** open file with ignore changes<br/>
-**:e#** *or* **:e!#** open previous file<br/>
-**:wq** *or* **:x** *or* **:x!** save and exit<br/>
-**:q!**  exit without save<br/>
+On shell:
 
-**!!command**  run *command* and get output<br/>
+```
+$ vi filename
+```
+
+On editor:
+
+```
+**:e filename** open file
+**:e! filename** open file with ignore changes
+**:e#** *or* **:e!#** open previous file
+**:wq** *or* **:x** *or* **:x!** save and exit
+**:q!**  exit without save
+
+**!!command**  run *command* and get output
+```
+
+Check on bottom of screen the command mode:<br/>
+
+**nothing** is command mode<br/>
+**-- INSERT --**  is in insert mode<br/>
+**-- REPLACE --**  is in replace mode<br/>
+<br/>
+Type <kbd>esc</kdb> to exit to command mode<br/>
 
 <table width="0">
 <tr>
