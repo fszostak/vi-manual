@@ -46,7 +46,7 @@ VI editor command summary. Enjoy and increase it. You're welcome.
 <kbd>?</kbd> *+* **str**  find previous match *str*<br/>
 <kbd>%</kbd> find match close char {}()[]<br/>
 
-**Insert**
+**Insert mode**
  
 <kbd>i</kbd>  enter on insert mode<br/>
 <kbd>I</kbd>  at begin of line<br/>
