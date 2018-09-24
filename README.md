@@ -6,19 +6,18 @@ VI command summary. Enjoy and increase it. You're welcome.
 
 ----------
 
-<table border="2" width="0">
+<table width="0">
 <tr>
 <td>
-
 *Basic commands*
 
 **Edition**
 
-:e file ope**n**<br/>
-:e! file open with ignore changes<br/>
-:e# ou :e!# open previous file<br/>
-:wq ou :x ou :x! save and exit<br/>
-!!cmd  run command and get output<br/>
+**:e filename** open file<br/>
+**:e! filename** open file with ignore changes<br/>
+**:e#** *or* **:e!#** open previous file<br/>
+**:wq** *or* **:x** *or* **:x!** save and exit<br/>
+**!!command**  run *command* and get output<br/>
 
 **Navigation**
 
@@ -33,16 +32,17 @@ VI command summary. Enjoy and increase it. You're welcome.
 <kbd>w</kbd> begin next word<br/>
 <kbd>e</kbd> end next word<br/>
 <kbd>b</kbd> back previous word<br/>
-<kbd>CTRL-F</kbd> like PG-DOWN<br/>
-<kbd>CTRL-B</kbd> like PG-UP<br/>
+<kbd>CTRL-F</kbd> like <kbd>PageDown</kbd><br/>
+<kbd>CTRL-B</kbd> like <kbd>PageUp</kbd><br/>
 <kbd>G</kbd>  go end of file<br/>
-:n go to line number ($=end)<br/>
+**:n** go to line number <br/>
+**:$** go to end of file<br/>
 
 **Search**
 
 <kbd>/</kbd> str find next match<br/>
 <kbd>?</kbd> str find previous match<br/>
-<kbd>%</kbd>  find close char {}()[]<br/>
+<kbd>%</kbd> find match close char {}()[]<br/>
 
 **Insert**
  
@@ -61,16 +61,17 @@ VI command summary. Enjoy and increase it. You're welcome.
 
 **Delete**
 <kbd>x</kbd>  delete current character<br/>
-<kbd>d</kbd> + <kbd>d</kbd>  delete current line<br/>
+<kbd>d</kbd> *+* <kbd>d</kbd>  delete current line<br/>
 :g/regexp/d delete all lines match regexp<br/>
 
-**Replace**
+**Replace mode**
 <kbd>r</kbd>   replace one character <br/>
 <kbd>R</kbd>   enter in replace mode<br/>
 <kbd>c</kbd>+<kbd>w</kbd>  replace current word<br/>
 <kbd>s</kbd>  replace one char and enter in replace mode<br/>
-:x,y s /search/replace/g find and replace<br/> (x,y = line range, % is oll, g is all occurences in line)<br/>
-<kbd>~</kbd> change character case (uppercase|lowercase)<br/>
+**:x,y s /search/replace/g**  find and replace<br/><br/>
+(*x,y* is line range, *%* is oll, *g* is all occurences in line)<br/>
+<kbd>~</kbd>  change character case (uppercase|lowercase)<br/>
 
 **Join lines**
 
@@ -87,7 +88,7 @@ VI command summary. Enjoy and increase it. You're welcome.
 
 **Copy to buffer**
 
-<kbd>y</kbd> + <kbd>y</kbd> copy current line to temporary buffer<br/>
+<kbd>y</kbd> *+* <kbd>y</kbd> copy current line to temporary buffer<br/>
 <kbd>Y</kbd> copy current line to temporary buffer<br/>
 
 **Paste buffer**
@@ -96,9 +97,9 @@ VI command summary. Enjoy and increase it. You're welcome.
 <kbd>p</kbd> paste buffer next<br/>
 
 **Mark**
-<kbd>m</kbd>[a-z] put mark in current line<br/>
-<kbd>’</kbd>[a-z] go to mark<br/>
-<kbd>’</kbd> + <kbd>’</kbd> go to last mark<br/>
+<kbd>m</kbd>**[a-z]** put mark in current line<br/>
+<kbd>’</kbd>**[a-z]** go to mark<br/>
+<kbd>’</kbd> *+* <kbd>’</kbd> go to last mark<br/>
 
 </td>
 <td>
@@ -127,37 +128,34 @@ VI command summary. Enjoy and increase it. You're welcome.
 **Delete**
 
 **n**<kbd>x</kbd> **n** characters<br/>
-**n**<kbd>d</kbd> + <kbd>d</kbd> **n** lines<br/>
+**n**<kbd>d</kbd> *+* <kbd>d</kbd> **n** lines<br/>
 <kbd>d</kbd>/str até encontrar str<br/>
-<kbd>d</kbd>% delete to match character {}[]()<br/>
-<kbd>d</kbd>G delete to end of file<br/>
-<kbd>d</kbd>1G delete to begining of file<br/>
-<kbd>d</kbd>nG delete to begining of file, except **n** first lines<br/>
-<kbd>d</kbd>w delete to end of word<br/>
-<kbd>d</kbd>nw delete **n** words<br/>
+<kbd>d</kbd><kbd>%</kbd> delete to match character {}[]()<br/>
+<kbd>d</kbd><kbd>G</kbd> delete to end of file<br/>
+<kbd>d</kbd><kbd>1</kbd>G</kbd> delete to begining of file<br/>
+<kbd>d</kbd>n<kbd>>G</kbd> delete to begining of file, except **n** first lines<br/>
+<kbd>d</kbd><kbd>w</kbd> delete to end of word<br/>
+<kbd>d</kbd>n<kbd>>w</kbd> delete **n** words<br/>
 
-**Replace**
+**Replace mode**
 
 **n**<kbd>s</kbd> **n** characters<br/>
-<kbd>c</kbd>**n**<kbd>w</kbd> **n** palavras<br/>
-<kbd>c</kbd><kbd>$</kbd> do cursor até o final da
-   linha<br/>
-<kbd>c</kbd><kbd>0</kbd> do cursor até o início
-   da linha<br/>
-<kbd>c</kbd><kbd>/</kbd>str até encontrar str<br/>
-<kbd>c</kbd><kbd>%</kbd> grupo de linhas/ 
-   caracteres {}[]()<br/>
-<kbd>c</kbd><kbd>G</kbd> até final do arquivo<br/>
+<kbd>c</kbd>**n**<kbd>w</kbd> **n** words<br/>
+<kbd>c</kbd><kbd>$</kbd> replace to end of line<br/>
+<kbd>c</kbd><kbd>0</kbd> replace to beginning of line<br/>
+<kbd>c</kbd><kbd>/</kbd>str replace to match *str*<br/>
+<kbd>c</kbd><kbd>%</kbd> replace to match char {}[]()<br/>
+<kbd>c</kbd><kbd>G</kbd> replace to end of file<br/>
 
 
 
 **Join lines**
 
-nJ **n** linhas logo abaixo da corrente<br/>
+nJ **n** join **n* lines above current line<br/>
 
 **Indent**
 
-n>> **n** linhas a direita<br/>
+**n**<kbd>></kbd><kbd>></kbd> **n** linhas a direita<br/>
 **n**<< **n** linhas a esquerda<br/>
 >% bloco a direita<br/>
 <% bloco a esquerda<br/>
