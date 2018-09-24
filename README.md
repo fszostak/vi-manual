@@ -30,7 +30,7 @@ Check on bottom of screen the command mode:<br/>
 **-- INSERT --**  is on *insert* mode<br/>
 **-- REPLACE --**  is on *replace* mode<br/>
 <br/>
-Always type <kbd>esc</kbd> to switch to command mode<br/>
+Note: Always type <kbd>esc</kbd> to switch to command mode<br/>
 
 <table width="0">
 <tr>
