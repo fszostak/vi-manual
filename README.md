@@ -25,7 +25,7 @@ On editor:<br/>
 <br/>
 **!!command**  run *command* and get output<br/>
 <br/>
-Check on bottom of screen the command mode:<br/>
+Check on bottom of screen the current mode:<br/>
 <br/>
 **nothing** is on *command* mode<br/>
 **-- INSERT --**  is on *insert* mode<br/>
