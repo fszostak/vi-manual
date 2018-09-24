@@ -139,8 +139,8 @@ VI editor command summary. Enjoy and increase it. You're welcome.
 <kbd>d/</kbd> **str** delete until match *str*<br/>
 <kbd>d%</kbd> delete match character {}[]()<br/>
 <kbd>dG</kbd> delete until end of file<br/>
-<kbd>d1G</kbd> delete to begining of file<br/>
-<kbd>d</kbd> **n** <kbd>G</kbd> delete to begining of file, except *n* first lines<br/>
+<kbd>d1G</kbd> delete to beginning of file<br/>
+<kbd>d</kbd> **n** <kbd>G</kbd> delete to beginning of file, except *n* first lines<br/>
 <kbd>dw</kbd> delete to end of word<br/>
 <kbd>d</kbd> **n** <kbd>w</kbd> delete **n** words<br/>
 
