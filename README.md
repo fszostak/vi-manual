@@ -1,4 +1,4 @@
-VI Editor Manual by Fabio Szostak!
+VI Editor Manual 2004-2018 by Fabio Szostak!
 ===================
 
 
