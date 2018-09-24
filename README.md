@@ -167,8 +167,8 @@ nJ **n** join **n* lines above current line<br/>
 
 **Registers**
 
-<kbd>“<kbd>**[a-z]** open the register<br/>
-<kbd>@<kbd>**[a-z]** execute commands into de register <br/>
+<kbd>“</kbd>**[a-z]** open the register<br/>
+<kbd>@</kbd>**[a-z]** execute commands into de register <br/>
 
 
 **Copy to register**
