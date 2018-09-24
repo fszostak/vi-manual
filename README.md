@@ -22,37 +22,37 @@ VI command summary. Enjoy and increase it. You're welcome.
 
 **Navigation**
 
-<kbd>h</kbd> like <kbd>&larr;</kbd> <br/>
-<kbd>j</kbd> like <kbd>&darr;</kbd><br/>
-<kbd>k</kbd> like <kbd>&uarr;</kbd><br/>
-<kbd>l</kbd> like <kbd>&rarr;</kbd><br/>
+<kbd>h</kbd> go left, like <kbd>&larr;</kbd> <br/>
+<kbd>j</kbd> go down, like <kbd>&darr;</kbd><br/>
+<kbd>k</kbd> go up, like <kbd>&uarr;</kbd><br/>
+<kbd>l</kbd> go right, like <kbd>&rarr;</kbd><br/>
 <kbd>0</kbd> begin of line<br/>
 <kbd>$</kbd> end of line<br/>
-<kbd>H</kbd> top of scree**n**<br/>
+<kbd>H</kbd> top of screen<br/>
 <kbd>L</kbd> bottom of scree**n**<br/>
 <kbd>w</kbd> begin next word<br/>
 <kbd>e</kbd> end next word<br/>
 <kbd>b</kbd> back previous word<br/>
-<kbd>CTRL-F</kbd> like <kbd>PageDown</kbd><br/>
-<kbd>CTRL-B</kbd> like <kbd>PageUp</kbd><br/>
+<kbd>CTRL-F</kbd> go next page, like <kbd>PageDown</kbd><br/>
+<kbd>CTRL-B</kbd> go previous page, like <kbd>PageUp</kbd><br/>
 <kbd>G</kbd>  go end of file<br/>
 **:n** go to line number <br/>
 **:$** go to end of file<br/>
 
 **Search**
 
-<kbd>/</kbd> str find next match<br/>
-<kbd>?</kbd> str find previous match<br/>
+<kbd>/</kbd> *+* **str**  find next match *str*<br/>
+<kbd>?</kbd> *+* **str**  find previous match *str*<br/>
 <kbd>%</kbd> find match close char {}()[]<br/>
 
 **Insert**
  
-<kbd>i</kbd>  enter in insert mode<br/>
-<kbd>I</kbd>  enter insert mode at begin of line<br/>
+<kbd>i</kbd>  enter on insert mode<br/>
+<kbd>I</kbd>  at begin of line<br/>
 <kbd>a</kbd>  at next character<br/>
-<kbd>A</kbd>  enter insert mode at end of file<br/>
-<kbd>o</kbd>  enter insert mode at next line<br/>
-<kbd>O</kbd>  enter insert mode at previous line<br/>
+<kbd>A</kbd>  at end of file<br/>
+<kbd>o</kbd>  at next line<br/>
+<kbd>O</kbd>  at previous line<br/>
 
 **Undo changes**
 
@@ -62,14 +62,14 @@ VI command summary. Enjoy and increase it. You're welcome.
 **Delete**
 
 <kbd>x</kbd>  delete current character<br/>
-<kbd>d</kbd> *+* <kbd>d</kbd>  delete current line<br/>
-**:g/regexp/d** delete all lines match regexp<br/>
+<kbd>dd</kbd>  delete current line<br/>
+**:g/regexp/d**  delete all lines match *regexp*<br/>
 
 **Replace mode**
 
 <kbd>r</kbd>   replace one character <br/>
 <kbd>R</kbd>   enter in replace mode<br/>
-<kbd>c</kbd>+<kbd>w</kbd>  replace current word<br/>
+<kbd>cw</kbd>  replace current word<br/>
 <kbd>s</kbd>  replace one char and enter in replace mode<br/>
 <br/>
 **:x,y s /find/replace/g**  find and replace<br/>
@@ -90,9 +90,9 @@ VI command summary. Enjoy and increase it. You're welcome.
 <kbd>>></kbd> shift current line to right<br/>
 <kbd><<</kbd> shift current line to left<br/>
 
-**Copy to buffer**
+**Put to buffer**
 
-<kbd>y</kbd> *+* <kbd>y</kbd> copy current line to temporary buffer<br/>
+<kbd>yy</kbd> copy current line to temporary buffer<br/>
 <kbd>Y</kbd> copy current line to temporary buffer<br/>
 
 **Paste buffer**
@@ -104,7 +104,7 @@ VI command summary. Enjoy and increase it. You're welcome.
 
 <kbd>m</kbd>**[a-z]** put *[a-z]* mark in current line<br/>
 <kbd>’</kbd>**[a-z]** go to *[a-z]* mark<br/>
-<kbd>’</kbd> *+* <kbd>’</kbd> go to last mark<br/>
+<kbd>’’</kbd> go to last mark<br/>
 
 </td>
 <td valign="top">
@@ -113,33 +113,33 @@ VI command summary. Enjoy and increase it. You're welcome.
 
 **Navigation**
 
-**n**<kbd>h</kbd> **n** chars to left <br/>
-**n**<kbd>j</kbd> **n** lines to dow**n**<br/>
-**n**<kbd>k</kbd> **n** lines to up<br/>
-**n**<kbd>l</kbd> **n** chars to right<br/>
+**n**<kbd>h</kbd> go *n* chars to left <br/>
+**n**<kbd>j</kbd> go *n* lines to down<br/>
+**n**<kbd>k</kbd> go *n* lines to up<br/>
+**n**<kbd>l</kbd> go *n* chars to right<br/>
 
-**n**<kbd>w</kbd> **n** words<br/>
-**n**<kbd>e</kbd> **n** words<br/>
-**n**<kbd>b</kbd> back **n** words<br/>
+**n**<kbd>w</kbd> go next *n* words<br/>
+**n**<kbd>e</kbd> go next *n* words at end<br/>
+**n**<kbd>b</kbd> go back *n* words<br/>
 
-**n**<kbd>G</kbd> **n** lines from begin of file<br/>
+**n**<kbd>G</kbd> go *n* lines from begin of file<br/>
 
 **Insert mode**
 
-**n**<kbd>i</kbd> insert **n** times <br/>
-**n**<kbd>I</kbd> insert **n** times <br/>
-**n**<kbd>a</kbd> insert **n** times <br/>
-**n**<kbd>A</kbd> insert **n** times <br/>
+**n**<kbd>i</kbd> insert **n** times after <kbd>esc</kbd><br/>
+**n**<kbd>I</kbd> insert **n** times after <kbd>esc</kbd><br/>
+**n**<kbd>a</kbd> insert **n** times after <kbd>esc</kbd><br/>
+**n**<kbd>A</kbd> insert **n** times after <kbd>esc</kbd><br/>
 
 **Delete**
 
 **n**<kbd>x</kbd> delete *n* characters<br/>
 **n**<kbd>d</kbd> *+* <kbd>d</kbd> delete *n* lines<br/>
-<kbd>d/</kbd>**str** delete match *str*<br/>
-<kbd>d%</kbd> delete to match character {}[]()<br/>
-<kbd>dG</kbd> delete to end of file<br/>
+<kbd>d/</kbd>**str** delete until match *str*<br/>
+<kbd>d%</kbd> delete match character {}[]()<br/>
+<kbd>dG</kbd> delete until end of file<br/>
 <kbd>d1G</kbd> delete to begining of file<br/>
-<kbd>d</kbd> *+* **n** *+* <kbd>>G</kbd> delete to begining of file, except **n** first lines<br/>
+<kbd>d</kbd> *+* **n** *+* <kbd>>G</kbd> delete to begining of file, except *n* first lines<br/>
 <kbd>dw</kbd> delete to end of word<br/>
 <kbd>d</kbd> *+* **n** *+* <kbd>>w</kbd> delete **n** words<br/>
 
@@ -149,7 +149,7 @@ VI command summary. Enjoy and increase it. You're welcome.
 <kbd>c</kbd>**n**<kbd>w</kbd> *n* words<br/>
 <kbd>c$</kbd> replace to end of line<br/>
 <kbd>c0</kbd> replace to beginning of line<br/>
-<kbd>c/</kbd>**str** replace to match *str*<br/>
+<kbd>c/</kbd>**str** replace until match *str*<br/>
 <kbd>c%</kbd> replace to match char {}[]()<br/>
 <kbd>cG</kbd> replace to end of file<br/>
 
@@ -161,11 +161,11 @@ n<kbd>J</kbd> **n** join **n* lines above current line<br/>
 
 **n**<kbd>>>></kbd> *n* lines to right<br/>
 **n**<kbd><<</kbd> *n* lines to left<br/>
-<kbd>>%</kbd> shift match char to right<br/>
-<kbd><%</kbd> shift match char to left<br/>
+<kbd>>%</kbd> shift until match char to right<br/>
+<kbd><%</kbd> shift until match char to left<br/>
 <kbd>>G</kbd> shift to end of file<br/>
 <kbd>>1G</kbd> shift to beginning of file<br/>
-<kbd>>/</kbd>**str** shift to match *str*<br/>
+<kbd>>/</kbd>**str** shift until match *str*<br/>
 
 **Registers**
 
