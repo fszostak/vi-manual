@@ -92,7 +92,7 @@ VI command summary. Enjoy and increase it. You're welcome.
 
 **Put to buffer**
 
-<kbd>yy</kbd> *or* <kbd>Y</kbd> copy current line to temporary buffer<br/>
+<kbd>yy</kbd> *or* <kbd>Y</kbd> put current line to temporary buffer<br/>
 
 **Paste buffer**
 
@@ -132,20 +132,20 @@ VI command summary. Enjoy and increase it. You're welcome.
 
 **Delete**
 
-**n**<kbd>x</kbd> delete *n* characters<br/>
-**n**<kbd>d</kbd> *+* <kbd>d</kbd> delete *n* lines<br/>
+**n** <kbd>x</kbd> delete *n* characters<br/>
+**n** <kbd>dd</kbd> delete *n* lines<br/>
 <kbd>d/</kbd>**str** delete until match *str*<br/>
 <kbd>d%</kbd> delete match character {}[]()<br/>
 <kbd>dG</kbd> delete until end of file<br/>
 <kbd>d1G</kbd> delete to begining of file<br/>
-<kbd>d</kbd> *+* **n** *+* <kbd>>G</kbd> delete to begining of file, except *n* first lines<br/>
+<kbd>d</kbd> *+* **n** *+* <kbd>G</kbd> delete to begining of file, except *n* first lines<br/>
 <kbd>dw</kbd> delete to end of word<br/>
-<kbd>d</kbd> *+* **n** *+* <kbd>>w</kbd> delete **n** words<br/>
+<kbd>d</kbd> *+* **n** *+* <kbd>w</kbd> delete **n** words<br/>
 
 **Replace mode**
 
-**n**<kbd>s</kbd> **n** characters<br/>
-<kbd>c</kbd>**n**<kbd>w</kbd> *n* words<br/>
+**n** <kbd>s</kbd> replace **n** characters<br/>
+<kbd>c</kbd> **n** <kbd>w</kbd> replace *n* words<br/>
 <kbd>c$</kbd> replace to end of line<br/>
 <kbd>c0</kbd> replace to beginning of line<br/>
 <kbd>c/</kbd>**str** replace until match *str*<br/>
@@ -154,12 +154,12 @@ VI command summary. Enjoy and increase it. You're welcome.
 
 **Join lines**
 
-n<kbd>J</kbd> **n** join **n* lines above current line<br/>
+n<kbd>J</kbd> **n**  join **n* lines above current line<br/>
 
 **Indent**
 
-**n**<kbd>>>></kbd> *n* lines to right<br/>
-**n**<kbd><<</kbd> *n* lines to left<br/>
+**n**<kbd>>></kbd>  shift *n* lines to right<br/>
+**n**<kbd><<</kbd>  shift *n* lines to left<br/>
 <kbd>>%</kbd> shift until match char to right<br/>
 <kbd><%</kbd> shift until match char to left<br/>
 <kbd>>G</kbd> shift to end of file<br/>
