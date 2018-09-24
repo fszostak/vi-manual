@@ -22,10 +22,10 @@ VI command summary. Enjoy and increase it. You're welcome.
 
 **Navigation**
 
-<kbd>h</kbd> like arrow left <br/>
-<kbd>j</kbd> like arrow dow**n**<br/>
-<kbd>k</kbd> like arrow up<br/>
-<kbd>l</kbd> like arrow right<br/>
+<kbd>h</kbd> like <kbd>&larr;</kbd> <br/>
+<kbd>j</kbd> like <kbd>&darr;</kbd><br/>
+<kbd>k</kbd> like <kbd>&uarr;</kbd><br/>
+<kbd>l</kbd> like <kbd>&rarr;</kbd><br/>
 <kbd>0</kbd> begin of line<br/>
 <kbd>$</kbd> end of line<br/>
 <kbd>H</kbd> top of scree**n**<br/>
