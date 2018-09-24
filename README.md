@@ -69,7 +69,7 @@ VI command summary. Enjoy and increase it. You're welcome.
 <kbd>R</kbd>   enter in replace mode<br/>
 <kbd>c</kbd>+<kbd>w</kbd>  replace current word<br/>
 <kbd>s</kbd>  replace one char and enter in replace mode<br/>
-:x,y s /search/replace/g find and replace (x,y = line range, % is oll, g is all occurences in line)<br/>
+:x,y s /search/replace/g find and replace<br/> (x,y = line range, % is oll, g is all occurences in line)<br/>
 <kbd>~</kbd> change character case (uppercase|lowercase)<br/>
 
 **Join lines**
