@@ -87,8 +87,8 @@ VI command summary. Enjoy and increase it. You're welcome.
 
 **Indent**
 
-<kbd>></kbd><kbd>></kbd> shift current line to right<br/>
-<kbd><</kbd><kdb><</kbd> shift current line to left<br/>
+<kbd>>></kbd> shift current line to right<br/>
+<kbd><<</kbd> shift current line to left<br/>
 
 **Copy to buffer**
 
@@ -133,39 +133,39 @@ VI command summary. Enjoy and increase it. You're welcome.
 
 **Delete**
 
-**n**<kbd>x</kbd> **n** characters<br/>
-**n**<kbd>d</kbd> *+* <kbd>d</kbd> **n** lines<br/>
-<kbd>d</kbd>/str até encontrar str<br/>
-<kbd>d</kbd><kbd>%</kbd> delete to match character {}[]()<br/>
-<kbd>d</kbd><kbd>G</kbd> delete to end of file<br/>
-<kbd>d</kbd><kbd>1</kbd>G</kbd> delete to begining of file<br/>
-<kbd>d</kbd>n<kbd>>G</kbd> delete to begining of file, except **n** first lines<br/>
-<kbd>d</kbd><kbd>w</kbd> delete to end of word<br/>
-<kbd>d</kbd>n<kbd>>w</kbd> delete **n** words<br/>
+**n**<kbd>x</kbd> delete *n* characters<br/>
+**n**<kbd>d</kbd> *+* <kbd>d</kbd> delete *n* lines<br/>
+<kbd>d/</kbd>**str** delete match *str*<br/>
+<kbd>d%</kbd> delete to match character {}[]()<br/>
+<kbd>dG</kbd> delete to end of file<br/>
+<kbd>d1G</kbd> delete to begining of file<br/>
+<kbd>d</kbd> *+* **n** *+* <kbd>>G</kbd> delete to begining of file, except **n** first lines<br/>
+<kbd>dw</kbd> delete to end of word<br/>
+<kbd>d</kbd> *+* **n** *+* <kbd>>w</kbd> delete **n** words<br/>
 
 **Replace mode**
 
 **n**<kbd>s</kbd> **n** characters<br/>
-<kbd>c</kbd>**n**<kbd>w</kbd> **n** words<br/>
-<kbd>c</kbd><kbd>$</kbd> replace to end of line<br/>
-<kbd>c</kbd><kbd>0</kbd> replace to beginning of line<br/>
-<kbd>c</kbd><kbd>/</kbd>str replace to match *str*<br/>
-<kbd>c</kbd><kbd>%</kbd> replace to match char {}[]()<br/>
-<kbd>c</kbd><kbd>G</kbd> replace to end of file<br/>
+<kbd>c</kbd>**n**<kbd>w</kbd> *n* words<br/>
+<kbd>c$</kbd> replace to end of line<br/>
+<kbd>c0</kbd> replace to beginning of line<br/>
+<kbd>c/</kbd>**str** replace to match *str*<br/>
+<kbd>c%</kbd> replace to match char {}[]()<br/>
+<kbd>cG</kbd> replace to end of file<br/>
 
 **Join lines**
 
-nJ **n** join **n* lines above current line<br/>
+n<kbd>J</kbd> **n** join **n* lines above current line<br/>
 
 **Indent**
 
-**n**<kbd>></kbd><kbd>></kbd> *n* lines to right<br/>
-**n**<kbd><</kbd><kbd><</kbd> *n* lines to left<br/>
-<kbd>></kbd><kbd>%</kbd> shift match char to right<br/>
-<kbd><</kbd><kbd>%</kbd> shift match char to left<br/>
-<kbd>></kbd><kbd>G</kbd> shift to end of file<br/>
-<kbd>>1</kbd><kbd>G</kbd> shift to beginning of file<br/>
-<kbd>></kbd><kbd>/</kbd>**str** shift to match *str*<br/>
+**n**<kbd>>>></kbd> *n* lines to right<br/>
+**n**<kbd><<</kbd> *n* lines to left<br/>
+<kbd>>%</kbd> shift match char to right<br/>
+<kbd><%</kbd> shift match char to left<br/>
+<kbd>>G</kbd> shift to end of file<br/>
+<kbd>>1G</kbd> shift to beginning of file<br/>
+<kbd>>/</kbd>**str** shift to match *str*<br/>
 
 **Registers**
 
@@ -174,11 +174,11 @@ nJ **n** join **n* lines above current line<br/>
 
 **Put to register**
 
-<kbd>“</kbd>**r**<kbd>y</kbd><kbd>y</kbd>  put current line to register “r”<br/>
-<kbd>“</kbd>**r**<kbd>y</kbd><kbd>’</kbd>**m**  put until match mark "m” to register "r"<br/>
-<kbd>“</kbd>**r**<kbd>y</kbd><kbd>/</kbd>**str**  put until find string *"str"* to register *"r"*<br/>
-<kbd>“</kbd>**r**<kbd>y</kbd>$</kbd> put until find end of line to register *"r"*<br/>
-<kbd>“</kbd>**r**<kbd>y</kbd><kbd>w</kbd> put one word to register *“r”*<br/>
+<kbd>“</kbd>**r**<kbd>yy</kbd>  put current line to register “r”<br/>
+<kbd>“</kbd>**r**<kbd>y’</kbd>**m**  put until match mark "m” to register "r"<br/>
+<kbd>“</kbd>**r**<kbd>y/</kbd>**str**  put until find string *"str"* to register *"r"*<br/>
+<kbd>“</kbd>**r**<kbd>y$</kbd> put until find end of line to register *"r"*<br/>
+<kbd>“</kbd>**r**<kbd>yw</kbd> put one word to register *“r”*<br/>
 
 **Get from register**
 
@@ -190,8 +190,10 @@ nJ **n** join **n* lines above current line<br/>
 </table>
 
 
-**RegExp Example**
+**RegExp Replace Example**
 
+
+```
  ORIGINAL FILE         CHANGED FILE<br/>
  ........ 1234.10  =>  ........ 1234,10 <br/>
  ........ 2233.20  =>  ........ 2233,20 <br/>
@@ -200,4 +202,5 @@ Command:       :1,$ s /\.\([0-9]\)/,\1/<br/>
 <br/>
 Find:     .(dígit 0 to 9)<br/>
 Replace:  ,(dígit 0 to 9)<br/>
+```
 <br/>
