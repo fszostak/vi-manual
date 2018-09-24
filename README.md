@@ -6,19 +6,20 @@ VI editor command summary. Enjoy and increase it. You're welcome.
 
 ----------
 
-<table width="0">
-<tr>
-<td valign="top">
-
-*Basic commands*
-
 **Edition**
 
 **:e filename** open file<br/>
 **:e! filename** open file with ignore changes<br/>
 **:e#** *or* **:e!#** open previous file<br/>
 **:wq** *or* **:x** *or* **:x!** save and exit<br/>
+
 **!!command**  run *command* and get output<br/>
+
+<table width="0">
+<tr>
+<td valign="top">
+
+*Basic commands*
 
 **Navigation**
 
