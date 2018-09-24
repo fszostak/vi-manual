@@ -14,7 +14,7 @@ VI command summary. Enjoy and increase it. You're welcome.
 
 **Edition**
 
-:e file open<br/>
+:e file ope**n**<br/>
 :e! file open with ignore changes<br/>
 :e# ou :e!# open previous file<br/>
 :wq ou :x ou :x! save and exit<br/>
@@ -23,13 +23,13 @@ VI command summary. Enjoy and increase it. You're welcome.
 **Navigation**
 
 <kbd>h</kbd> like arrow left <br/>
-<kbd>j</kbd> like arrow down<br/>
+<kbd>j</kbd> like arrow dow**n**<br/>
 <kbd>k</kbd> like arrow up<br/>
 <kbd>l</kbd> like arrow right<br/>
 <kbd>0</kbd> begin of line<br/>
 <kbd>$</kbd> end of line<br/>
-<kbd>H</kbd> top of screen<br/>
-<kbd>L</kbd> bottom of screen<br/>
+<kbd>H</kbd> top of scree**n**<br/>
+<kbd>L</kbd> bottom of scree**n**<br/>
 <kbd>w</kbd> begin next word<br/>
 <kbd>e</kbd> end next word<br/>
 <kbd>b</kbd> back previous word<br/>
@@ -90,7 +90,7 @@ VI command summary. Enjoy and increase it. You're welcome.
 <kbd>y</kbd> + <kbd>y</kbd> copy current line to temporary buffer<br/>
 <kbd>Y</kbd> copy current line to temporary buffer<br/>
 
-**Paste buffer **
+**Paste buffer**
 
 <kbd>P</kbd> paster buffer previous<br/>
 <kbd>p</kbd> paste buffer next<br/>
@@ -106,40 +106,40 @@ VI command summary. Enjoy and increase it. You're welcome.
 
 **Navigation**
 
-n<kbd>h</kbd> n chars to left <br/>
-n<kbd>j</kbd> n lines to down<br/>
-n<kbd>k</kbd> n lines to up<br/>
-n<kbd>l</kbd> n chars to right<br/>
+**n**<kbd>h</kbd> **n** chars to left <br/>
+**n**<kbd>j</kbd> **n** lines to dow**n**<br/>
+**n**<kbd>k</kbd> **n** lines to up<br/>
+**n**<kbd>l</kbd> **n** chars to right<br/>
 
-n<kbd>w</kbd> n words<br/>
-n<kbd>e</kbd> n words<br/>
-n<kbd>b</kbd> back n words<br/>
+**n**<kbd>w</kbd> **n** words<br/>
+**n**<kbd>e</kbd> **n** words<br/>
+**n**<kbd>b</kbd> back **n** words<br/>
 
-n<kbd>G</kbd> n lines from begin of file<br/>
+**n**<kbd>G</kbd> **n** lines from begin of file<br/>
 
 **Insert mode**
 
-n<kbd>i</kbd> insert n times <br/>
-n<kbd>I</kbd> insert n times <br/>
-n<kbd>a</kbd> insert n times <br/>
-n<kbd>A</kbd> insert n times <br/>
+**n**<kbd>i</kbd> insert **n** times <br/>
+**n**<kbd>I</kbd> insert **n** times <br/>
+**n**<kbd>a</kbd> insert **n** times <br/>
+**n**<kbd>A</kbd> insert **n** times <br/>
 
 **Delete**
 
-n<kbd>x</kbd> n characters<br/>
-n<kbd>d</kbd> + <kbd>d</kbd> n lines<br/>
+**n**<kbd>x</kbd> **n** characters<br/>
+**n**<kbd>d</kbd> + <kbd>d</kbd> **n** lines<br/>
 <kbd>d</kbd>/str até encontrar str<br/>
 <kbd>d</kbd>% delete to match character {}[]()<br/>
 <kbd>d</kbd>G delete to end of file<br/>
 <kbd>d</kbd>1G delete to begining of file<br/>
-<kbd>d</kbd>nG delete to begining of file, except n first lines<br/>
+<kbd>d</kbd>nG delete to begining of file, except **n** first lines<br/>
 <kbd>d</kbd>w delete to end of word<br/>
-<kbd>d</kbd>nw delete n words<br/>
+<kbd>d</kbd>nw delete **n** words<br/>
 
 **Replace**
 
-n<kbd>s</kbd> n characters<br/>
-<kbd>c</kbd>n<kbd>w</kbd> n palavras<br/>
+**n**<kbd>s</kbd> **n** characters<br/>
+<kbd>c</kbd>**n**<kbd>w</kbd> **n** palavras<br/>
 <kbd>c</kbd><kbd>$</kbd> do cursor até o final da
    linha<br/>
 <kbd>c</kbd><kbd>0</kbd> do cursor até o início
@@ -153,12 +153,12 @@ n<kbd>s</kbd> n characters<br/>
 
 **Join lines**
 
-nJ n linhas logo abaixo da corrente<br/>
+nJ **n** linhas logo abaixo da corrente<br/>
 
 **Indent**
 
-n>> n linhas a direita<br/>
-n<< n linhas a esquerda<br/>
+n>> **n** linhas a direita<br/>
+**n**<< **n** linhas a esquerda<br/>
 >% bloco a direita<br/>
 <% bloco a esquerda<br/>
 >G corrente até o final do arquivo<br/>
