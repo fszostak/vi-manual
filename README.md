@@ -1,6 +1,6 @@
 VI Editor Manual 
 ===================
-<small>Initial version 2004 by Fabio Szostak, updated 2018</small>
+<sup>Initial version 2004 by Fabio Szostak, updated 2018</sup>
 
 
 VI editor command summary. Enjoy and increase it. You're welcome.
