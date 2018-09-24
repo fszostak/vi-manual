@@ -92,13 +92,12 @@ VI command summary. Enjoy and increase it. You're welcome.
 
 **Put to buffer**
 
-<kbd>yy</kbd> copy current line to temporary buffer<br/>
-<kbd>Y</kbd> copy current line to temporary buffer<br/>
+<kbd>yy</kbd> *or* <kbd>Y</kbd> copy current line to temporary buffer<br/>
 
 **Paste buffer**
 
-<kbd>P</kbd> paster buffer previous<br/>
-<kbd>p</kbd> paste buffer next<br/>
+<kbd>P</kbd> paste buffer previous line<br/>
+<kbd>p</kbd> paste buffer next line<br/>
 
 **Mark**
 
