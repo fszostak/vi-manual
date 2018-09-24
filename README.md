@@ -63,7 +63,7 @@ VI command summary. Enjoy and increase it. You're welcome.
 
 <kbd>x</kbd>  delete current character<br/>
 <kbd>d</kbd> *+* <kbd>d</kbd>  delete current line<br/>
-:g/regexp/d delete all lines match regexp<br/>
+**:g/regexp/d** delete all lines match regexp<br/>
 
 **Replace mode**
 
@@ -71,8 +71,10 @@ VI command summary. Enjoy and increase it. You're welcome.
 <kbd>R</kbd>   enter in replace mode<br/>
 <kbd>c</kbd>+<kbd>w</kbd>  replace current word<br/>
 <kbd>s</kbd>  replace one char and enter in replace mode<br/>
-**:x,y s /search/replace/g**  find and replace<br/><br/>
-(*x,y* is line range, *%* is oll, *g* is all occurences in line)<br/>
+<br/>
+**:x,y s /find/replace/g**  find and replace<br/>
+*x,y* is line range, *%* is oll, *g* is all occurences in line<br/>
+<br/>
 <kbd>~</kbd>  change character case (uppercase|lowercase)<br/>
 
 **Join lines**
@@ -168,24 +170,20 @@ nJ **n** join **n* lines above current line<br/>
 **Registers**
 
 <kbd>“</kbd>**[a-z]** open the register<br/>
-<kbd>@</kbd>**[a-z]** execute commands into de register <br/>
+<kbd>@</kbd>**[a-z]** execute commands into the register <br/>
 
+**Put to register**
 
-**Copy to register**
+<kbd>“</kbd>**r**<kbd>y</kbd><kbd>y</kbd>  put current line to register “r”<br/>
+<kbd>“</kbd>**r**<kbd>y</kbd><kbd>’</kbd>**m**  put until match mark "m” to register "r"<br/>
+<kbd>“</kbd>**r**<kbd>y</kbd><kbd>/</kbd>**str**  put until find string *"str"* to register *"r"*<br/>
+<kbd>“</kbd>**r**<kbd>y</kbd>$</kbd> put until find end of line to register *"r"*<br/>
+<kbd>“</kbd>**r**<kbd>y</kbd><kbd>w</kbd> put one word to register *“r”*<br/>
 
-“ryy reg “r” com a linha corrente<br/>
-“ry’m reg “r” com o texto até 
-      encontrar a marca “m”<br/>
-“ry/str reg “r” com texto até
-        encontrar a string “str”<br/>
-“ry$ reg “r” com texto até o final da
-     linha<br/>
-“ryw reg “r” com uma palavra<br/>
+**Get from register**
 
-**Paste from register**
-
-“rp reg “r” após cursor/linha<br/>
-“rP reg “r” antes cursor/linha<br/>
+<kbd>“</kbd> *+* **r** *+* <kbd>p</kbd> paste content of register “r” after<br/>
+<kbd>“</kbd> *+* **r** *+* <kbd>P</kbd> paste content of register “r” before<br/>
 
 </td>
 </tr>
@@ -194,16 +192,12 @@ nJ **n** join **n* lines above current line<br/>
 
 **RegExp Example**
 
-DICA: Como fazer para trocar de uma só vez todas linhas abaixo de "." por ","<br/>
-<br/>
- ARQUIVO ORIGINAL      ARQUIVO ALTERADO<br/>
+ ORIGINAL FILE         CHANGED FILE<br/>
  ........ 1234.10  =>  ........ 1234,10 <br/>
  ........ 2233.20  =>  ........ 2233,20 <br/>
 <br/>
-Comando:       :1,$ s /\.\([0-9]\)/,\1/<br/>
+Command:       :1,$ s /\.\([0-9]\)/,\1/<br/>
 <br/>
-Pesquisar por:   .(dígito de 0 a 9)<br/>
-Substituir por:  ,(dígito de 0 a 9)<br/>
+Find:     .(dígit 0 to 9)<br/>
+Replace:  ,(dígit 0 to 9)<br/>
 <br/>
-Obs.: o "\1" refere-se ao primeiro (), para os demais será necessário referenciar "\2", "\3", "\4", etc.<br/>
-
