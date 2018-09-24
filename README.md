@@ -112,35 +112,35 @@ VI command summary. Enjoy and increase it. You're welcome.
 
 **Navigation**
 
-**n**<kbd>h</kbd> go *n* chars to left <br/>
-**n**<kbd>j</kbd> go *n* lines to down<br/>
-**n**<kbd>k</kbd> go *n* lines to up<br/>
-**n**<kbd>l</kbd> go *n* chars to right<br/>
+**n** <kbd>h</kbd> go *n* chars to left <br/>
+**n** <kbd>j</kbd> go *n* lines to down<br/>
+**n** <kbd>k</kbd> go *n* lines to up<br/>
+**n** <kbd>l</kbd> go *n* chars to right<br/>
 
-**n**<kbd>w</kbd> go next *n* words<br/>
-**n**<kbd>e</kbd> go next *n* words at end<br/>
-**n**<kbd>b</kbd> go back *n* words<br/>
+**n** <kbd>w</kbd> go next *n* words<br/>
+**n** <kbd>e</kbd> go next *n* words at end<br/>
+**n** <kbd>b</kbd> go back *n* words<br/>
 
-**n**<kbd>G</kbd> go *n* lines from begin of file<br/>
+**n** <kbd>G</kbd> go *n* lines from begin of file<br/>
 
 **Insert mode**
 
-**n**<kbd>i</kbd> insert **n** times after <kbd>esc</kbd><br/>
-**n**<kbd>I</kbd> insert **n** times after <kbd>esc</kbd><br/>
-**n**<kbd>a</kbd> insert **n** times after <kbd>esc</kbd><br/>
-**n**<kbd>A</kbd> insert **n** times after <kbd>esc</kbd><br/>
+**n** <kbd>i</kbd> insert **n** times after <kbd>esc</kbd><br/>
+**n** <kbd>I</kbd> insert **n** times after <kbd>esc</kbd><br/>
+**n** <kbd>a</kbd> insert **n** times after <kbd>esc</kbd><br/>
+**n** <kbd>A</kbd> insert **n** times after <kbd>esc</kbd><br/>
 
 **Delete**
 
 **n** <kbd>x</kbd> delete *n* characters<br/>
 **n** <kbd>dd</kbd> delete *n* lines<br/>
-<kbd>d/</kbd>**str** delete until match *str*<br/>
+<kbd>d/</kbd> **str** delete until match *str*<br/>
 <kbd>d%</kbd> delete match character {}[]()<br/>
 <kbd>dG</kbd> delete until end of file<br/>
 <kbd>d1G</kbd> delete to begining of file<br/>
-<kbd>d</kbd> *+* **n** *+* <kbd>G</kbd> delete to begining of file, except *n* first lines<br/>
+<kbd>d</kbd> **n** <kbd>G</kbd> delete to begining of file, except *n* first lines<br/>
 <kbd>dw</kbd> delete to end of word<br/>
-<kbd>d</kbd> *+* **n** *+* <kbd>w</kbd> delete **n** words<br/>
+<kbd>d</kbd> **n** <kbd>w</kbd> delete **n** words<br/>
 
 **Replace mode**
 
@@ -148,7 +148,7 @@ VI command summary. Enjoy and increase it. You're welcome.
 <kbd>c</kbd> **n** <kbd>w</kbd> replace *n* words<br/>
 <kbd>c$</kbd> replace to end of line<br/>
 <kbd>c0</kbd> replace to beginning of line<br/>
-<kbd>c/</kbd>**str** replace until match *str*<br/>
+<kbd>c/</kbd> **str** replace until match *str*<br/>
 <kbd>c%</kbd> replace to match char {}[]()<br/>
 <kbd>cG</kbd> replace to end of file<br/>
 
@@ -158,31 +158,31 @@ n<kbd>J</kbd> **n**  join **n* lines above current line<br/>
 
 **Indent**
 
-**n**<kbd>>></kbd>  shift *n* lines to right<br/>
-**n**<kbd><<</kbd>  shift *n* lines to left<br/>
+**n** <kbd>>></kbd>  shift *n* lines to right<br/>
+**n** <kbd><<</kbd>  shift *n* lines to left<br/>
 <kbd>>%</kbd> shift until match char to right<br/>
 <kbd><%</kbd> shift until match char to left<br/>
 <kbd>>G</kbd> shift to end of file<br/>
 <kbd>>1G</kbd> shift to beginning of file<br/>
-<kbd>>/</kbd>**str** shift until match *str*<br/>
+<kbd>>/</kbd> **str** shift until match *str*<br/>
 
 **Registers**
 
-<kbd>“</kbd>**[a-z]** open the register<br/>
-<kbd>@</kbd>**[a-z]** execute commands into the register <br/>
+<kbd>“</kbd> **[a-z]** open the register<br/>
+<kbd>@</kbd> **[a-z]** execute commands into the register <br/>
 
 **Put to register**
 
-<kbd>“</kbd>**r**<kbd>yy</kbd>  put current line to register “r”<br/>
-<kbd>“</kbd>**r**<kbd>y’</kbd>**m**  put until match mark "m” to register "r"<br/>
-<kbd>“</kbd>**r**<kbd>y/</kbd>**str**  put until find string *"str"* to register *"r"*<br/>
-<kbd>“</kbd>**r**<kbd>y$</kbd> put until find end of line to register *"r"*<br/>
-<kbd>“</kbd>**r**<kbd>yw</kbd> put one word to register *“r”*<br/>
+<kbd>“</kbd> **r** <kbd>yy</kbd>  put current line to register “r”<br/>
+<kbd>“</kbd> **r** <kbd>y’</kbd> **m**  put until match mark "m” to register "r"<br/>
+<kbd>“</kbd> **r** <kbd>y/</kbd> **str**  put until find string *"str"* to register *"r"*<br/>
+<kbd>“</kbd> **r** <kbd>y$</kbd> put until find end of line to register *"r"*<br/>
+<kbd>“</kbd> **r** <kbd>yw</kbd> put one word to register *“r”*<br/>
 
 **Get from register**
 
-<kbd>“</kbd> *+* **r** *+* <kbd>p</kbd> paste content of register “r” after<br/>
-<kbd>“</kbd> *+* **r** *+* <kbd>P</kbd> paste content of register “r” before<br/>
+<kbd>“</kbd> **r** <kbd>p</kbd> paste content of register “r” after<br/>
+<kbd>“</kbd> **r** <kbd>P</kbd> paste content of register “r” before<br/>
 
 </td>
 </tr>
