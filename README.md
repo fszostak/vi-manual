@@ -6,6 +6,10 @@ VI command summary. Enjoy and increase it. You're welcome.
 
 ----------
 
+<table border="2" width="0">
+<tr>
+<td>
+
 *Basic commands*
 
 **Edition**
@@ -96,6 +100,8 @@ VI command summary. Enjoy and increase it. You're welcome.
 <kbd>’</kbd>[a-z] go to mark<br/>
 <kbd>’</kbd> + <kbd>’</kbd> go to last mark<br/>
 
+</td>
+<td>
 *Advanced commands*
 
 **Navigation**
@@ -181,6 +187,10 @@ n<< n linhas a esquerda<br/>
 
 “rp reg “r” após cursor/linha<br/>
 “rP reg “r” antes cursor/linha<br/>
+
+</td>
+</tr>
+</table>
 
 
 **RegExp Example**
