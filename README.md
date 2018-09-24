@@ -53,18 +53,19 @@ VI command summary. Enjoy and increase it. You're welcome.
 <kbd>o</kbd>  enter insert mode at next line<br/>
 <kbd>O</kbd>  enter insert mode at previous line<br/>
 
-
 **Undo changes**
+
 <kbd>u</kbd>  last command<br/>
 <kbd>U</kbd>  all commands in current line<br/>
 
-
 **Delete**
+
 <kbd>x</kbd>  delete current character<br/>
 <kbd>d</kbd> *+* <kbd>d</kbd>  delete current line<br/>
 :g/regexp/d delete all lines match regexp<br/>
 
 **Replace mode**
+
 <kbd>r</kbd>   replace one character <br/>
 <kbd>R</kbd>   enter in replace mode<br/>
 <kbd>c</kbd>+<kbd>w</kbd>  replace current word<br/>
@@ -97,12 +98,14 @@ VI command summary. Enjoy and increase it. You're welcome.
 <kbd>p</kbd> paste buffer next<br/>
 
 **Mark**
+
 <kbd>m</kbd>**[a-z]** put mark in current line<br/>
 <kbd>’</kbd>**[a-z]** go to mark<br/>
 <kbd>’</kbd> *+* <kbd>’</kbd> go to last mark<br/>
 
 </td>
 <td>
+
 *Advanced commands*
 
 **Navigation**
@@ -147,8 +150,6 @@ VI command summary. Enjoy and increase it. You're welcome.
 <kbd>c</kbd><kbd>%</kbd> replace to match char {}[]()<br/>
 <kbd>c</kbd><kbd>G</kbd> replace to end of file<br/>
 
-
-
 **Join lines**
 
 nJ **n** join **n* lines above current line<br/>
@@ -164,7 +165,6 @@ nJ **n** join **n* lines above current line<br/>
 >/str corrente até encontrar str<br/>
 
 **Registers**
-
 
 “[a-z] indicar utilização de registrador <br/>
 @[a-z] executa comandos registrador <br/>
