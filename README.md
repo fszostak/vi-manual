@@ -1,8 +1,8 @@
-VI - Manual by Fabio Szostak!
+VI Editor Manual by Fabio Szostak!
 ===================
 
 
-VI command summary. Enjoy and increase it. You're welcome.
+VI editor command summary. Enjoy and increase it. You're welcome.
 
 ----------
 
