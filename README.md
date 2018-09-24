@@ -194,13 +194,13 @@ n<kbd>J</kbd> **n** join **n* lines above current line<br/>
 
 
 ```
- ORIGINAL FILE         CHANGED FILE<br/>
- ........ 1234.10  =>  ........ 1234,10 <br/>
- ........ 2233.20  =>  ........ 2233,20 <br/>
-<br/>
-Command:       :1,$ s /\.\([0-9]\)/,\1/<br/>
-<br/>
-Find:     .(dígit 0 to 9)<br/>
-Replace:  ,(dígit 0 to 9)<br/>
+ ORIGINAL FILE         CHANGED FILE
+ ........ 1234.10  =>  ........ 1234,10
+ ........ 2233.20  =>  ........ 2233,20 
+
+Command:       :1,$ s /\.\([0-9]\)/,\1/
+
+Find:     .(dígit 0 to 9)
+Replace:  ,(dígit 0 to 9)
 ```
 <br/>
