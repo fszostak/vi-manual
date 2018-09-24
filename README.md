@@ -85,8 +85,8 @@ VI command summary. Enjoy and increase it. You're welcome.
 
 **Indent**
 
-<kbd>>></kbd> shift current line to right<br/>
-<kbd><<</kbd> shift current line to left<br/>
+<kbd>></kbd><kbd>></kbd> shift current line to right<br/>
+<kbd><</kbd><kdb><</kbd> shift current line to left<br/>
 
 **Copy to buffer**
 
@@ -100,8 +100,8 @@ VI command summary. Enjoy and increase it. You're welcome.
 
 **Mark**
 
-<kbd>m</kbd>**[a-z]** put mark in current line<br/>
-<kbd>’</kbd>**[a-z]** go to mark<br/>
+<kbd>m</kbd>**[a-z]** put *[a-z]* mark in current line<br/>
+<kbd>’</kbd>**[a-z]** go to *[a-z]* mark<br/>
 <kbd>’</kbd> *+* <kbd>’</kbd> go to last mark<br/>
 
 </td>
@@ -157,18 +157,18 @@ nJ **n** join **n* lines above current line<br/>
 
 **Indent**
 
-**n**<kbd>></kbd><kbd>></kbd> **n** linhas a direita<br/>
-**n**<< **n** linhas a esquerda<br/>
->% bloco a direita<br/>
-<% bloco a esquerda<br/>
->G corrente até o final do arquivo<br/>
->1G corrente até o início do arquivo<br/>
->/str corrente até encontrar str<br/>
+**n**<kbd>></kbd><kbd>></kbd> *n* lines to right<br/>
+**n**<kbd><</kbd><kbd><</kbd> *n* lines to left<br/>
+<kbd>></kbd><kbd>%</kbd> shift match char to right<br/>
+<kbd><</kbd><kbd>%</kbd> shift match char to left<br/>
+<kbd>></kbd><kbd>G</kbd> shift to end of file<br/>
+<kbd>>1</kbd><kbd>G</kbd> shift to beginning of file<br/>
+<kbd>></kbd><kbd>/</kbd>**str** shift to match *str*<br/>
 
 **Registers**
 
-“[a-z] indicar utilização de registrador <br/>
-@[a-z] executa comandos registrador <br/>
+<kbd>“<kbd>**[a-z]** open the register<br/>
+<kbd>@<kbd>**[a-z]** execute commands into de register <br/>
 
 
 **Copy to register**
