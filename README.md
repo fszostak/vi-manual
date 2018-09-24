@@ -8,7 +8,8 @@ VI command summary. Enjoy and increase it. You're welcome.
 
 <table width="0">
 <tr>
-<td>
+<td valign="top">
+
 *Basic commands*
 
 **Edition**
@@ -104,7 +105,7 @@ VI command summary. Enjoy and increase it. You're welcome.
 <kbd>’</kbd> *+* <kbd>’</kbd> go to last mark<br/>
 
 </td>
-<td>
+<td valign="top">
 
 *Advanced commands*
 
